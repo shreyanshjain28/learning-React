@@ -13,6 +13,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 
     <Router />
+  
+    {/* <App/> */}
     {/* <HeroError NAME ='batman'/> */}
     <Image />
 

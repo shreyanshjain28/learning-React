@@ -4,28 +4,42 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {Link} from "react-router-dom";
 import PortalDemo from './PortalDemo';
+import Message from './message';
 import HeroError from './HeroError';
+import usercontext from './Context';
 
+import { ThemeProvider } from './contexts/darkmodeContext';
+import Person from './person';
 
 const App = () => {
   return (
     <>
-      <div>
-        <h1>Hello from the main page of the app!</h1>
-        <h3>Here are some examples of links to other pages</h3>
-        
-        
-        {/* <HeroError name='BATMAN'/>
-        <HeroError name='SUPERMAN'/> */}
-        {/* <HeroError name='JOKER'/> */}
-        <nav>
-          <ul>
-            <li>
-              <Link to="/profile">Profile page</Link>
-              <PortalDemo/>
-            </li>
-          </ul>
-        </nav> 
+      <div className='container'>
+
+        {/* <usercontext.Provider value='JACK'> */}
+         
+        <ThemeProvider>
+            <Person person={{name:'parth', age:28}}/>
+           
+        </ThemeProvider>
+            <h1>Hello from the main page of the app!</h1>
+            <h3>Here are some examples of links to other pages</h3>
+          
+
+            {/* <HeroError name='BATMAN'/>
+            <HeroError name='SUPERMAN'/> */}
+            {/* <HeroError name='JOKER'/> */}
+            
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/profile">Profile page</Link>
+                </li>
+              </ul>
+             </nav>
+             
+             <PortalDemo/>
+        {/* </usercontext.Provider>  */}
       </div>
     </>
   );

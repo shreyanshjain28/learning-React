@@ -5,6 +5,29 @@
   text-align: center;
 }
 
+.darkTheme {
+  background-color: black;
+  color: aliceblue;
+}
+
+.lightTheme {
+  background-color: aliceblue;
+  color: black;
+}
+.darkBtn {
+  background-color: black;
+  color: aliceblue;
+}
+.lightBtn {
+  background-color: aliceblue;
+  color: black;
+}
+
+
+.container-light{
+  background-color: rgb(216,216,216);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

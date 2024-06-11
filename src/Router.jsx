@@ -12,6 +12,7 @@ import Profile from './profile.jsx';
 import ErrorPage from './NotFound.jsx';
 import ErrorBoundary from "./ErrorBoundary.jsx";
 
+
 const Router = () =>{
     
     const router = createBrowserRouter([
@@ -20,7 +21,6 @@ const Router = () =>{
         element: <App />,
         errorElement: <ErrorBoundary/>
         },
-    
         {
         path: "profile/",                   //not working default path "profile/name"
         element: <Profile />
